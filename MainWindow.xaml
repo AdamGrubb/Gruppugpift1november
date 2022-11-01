@@ -1,0 +1,33 @@
+﻿<Window x:Class="Grupparbete1november.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Grupparbete1november"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="WeatherDetail" Grid.Column="3" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="0,10,20,0" Background="LightYellow"/>
+        <StackPanel Grid.Column="0" Grid.Row="1" Margin="10,0,0,0">
+            <RadioButton Content="Soligt" Name="Sunny"/>
+            <ComboBox Name="WindSpeed"/>
+            <ComboBox Name="Degrees"/>
+            <ComboBox Name="CloudFormation"/>
+        </StackPanel>
+        <Button Grid.Column="0" Grid.Row="3" Width="100" Height="40" Content="Skapa" Name="Skapa" Click="Skapa_Click"/>
+
+    </Grid>
+</Window>
